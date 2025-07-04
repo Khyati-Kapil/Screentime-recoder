@@ -24,5 +24,10 @@ router.post("/end-all", verifyToken, async (req, res) => {
   }
 });
 
+// GET /api/activity - testing route (optional but useful)
+router.get("/", (req, res) => {
+  res.status(200).json({ message: "Activity route works!" });
+});
+
 export default router;
 
